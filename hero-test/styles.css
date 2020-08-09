@@ -1,0 +1,101 @@
+body {
+  /* background-image: url('../Hero_img_mobile_01.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popup-overlay {
+  align-content: center;
+  visibility: hidden;
+  position: absolute;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-overlay.active {
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  visibility: hidden;
+}
+
+.popup-content.active {
+  visibility: visible;
+}
+
+.closeBtn {
+  display: flex;
+  align-content: center;
+  border-radius: 30px;
+  margin: 0.2rem;
+  font-size: 1rem;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+}
+.closeBtn:hover {
+  border: 1px solid #666666;
+  background: #666666;
+  color: #ffffff;
+}
+
+.para {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 5px solid red; */
+  margin-top: 13em;
+  margin-left: 15em;
+  margin-right: 15em;
+  min-height: fit-content;
+}
+
+.para-center {
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 4em;
+  margin: 0 3em 0 3em;
+  /* border: 5px solid red; */
+}
+
+.openBtn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0.2em 3em;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1rem;
+  width: 15em;
+  padding: 1.4em;
+  cursor: pointer;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.openBtn:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
