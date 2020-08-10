@@ -65,7 +65,7 @@ p {
   text-align: center;
   position: absolute;
   top: 50%;
-  margin-left: 3.5em;
+  margin-left: 3.8em;
   margin-top: 5em;
   z-index: 1;
   padding: 0.5em 0em;
@@ -76,4 +76,34 @@ p {
   text-transform: uppercase;
   font-family: 'Libre Franklin';
   font-size: 3.5em;
+}
+
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) {
+  p {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-family: 'Libre Franklin';
+    color: white;
+    font-size: 3.5em;
+    z-index: 1;
+  }
+  .openBtn.ui-link {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-left: 3.5em;
+    margin-top: 8em;
+    z-index: 1;
+    padding: 0.5em 0em;
+    background-color: lightgrey;
+    color: black;
+    width: 10em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Libre Franklin';
+    font-size: 3.5em;
+  }
 }
