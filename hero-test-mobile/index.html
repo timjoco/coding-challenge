@@ -7,6 +7,10 @@
       href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Franklin"
+      rel="stylesheet"
+    />
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
     <script src="script.js" async defer></script>
@@ -19,18 +23,21 @@
         world.
       </p>
     </div>
-    <a data-role="openBtn" class="openBtn" style="z-index: 0;">LEARN MORE</a>
-    <div data-role="popup" class="popup-content">
-      <iframe
-        width="860"
-        height="515"
-        src="https://www.youtube.com/embed/pT7a87NND4I"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        style="z-index: 0;"
-      ></iframe>
-      <div>
+    <a data-role="openBtn" class="openBtn">LEARN MORE</a>
+    <div data-role="popup-overlay" class="popup-overlay">
+      <div data-role="popup" class="popup-content">
+        <iframe
+          width="800"
+          height="600"
+          src="https://www.youtube.com/embed/pT7a87NND4I"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope;
+        picture-in-picture"
+          allowfullscreen
+        >
+          ></iframe
+        >
+        <div></div>
         <a data-role="closedBtn" class="closeBtn">X</a>
       </div>
     </div>
